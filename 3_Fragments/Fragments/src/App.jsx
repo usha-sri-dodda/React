@@ -1,17 +1,16 @@
 import "./App.css";
 import React from "react";
+import FoodItems from "./components/FoodItems";
+import ErrorMsg from "./components/ErrorMsg";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
+  // let foodItems=[];
+  // let foodItems = ["Dal", "Rice", "Curd"];
   return (
     <>
-      <h1>List:</h1>
-      <ul class="list-group">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-        <li class="list-group-item">A fourth item</li>
-        <li class="list-group-item">And a fifth one</li>
-      </ul>
+      <h1>Healthy Food:</h1>
+      <ErrorMsg></ErrorMsg>
+      <FoodItems></FoodItems>
     </>
   );
 }
